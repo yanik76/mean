@@ -1,0 +1,87 @@
+<div>
+	<img src="./assets/images/logo.PNG" alt="Logo" class="logo">
+</div>
+<div class="container-fluid" id="main">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+								</div>
+								<div class="col-md-6">
+									<img alt="Image Non Disponible" src="{{jsonAccountData.logo_url}}"
+										onerror="this.src='./assets/images/placeholder2.png';" class="img-thumbnail" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<h3>
+										{{jsonAccountData.name}}
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+				</div>
+			</div>
+			<button routerLink="/account" routerLinkActive="active">Retour à la liste des Comptes</button>
+
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<h3 class="text-center">
+						Liste des utilisateurs
+					</h3>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>
+							<span>ID du Login</span>
+						</th>
+						<th>
+							<span>Identifiant</span>
+						</th>
+						<th>
+							<span>Détail des Actions</span>
+						</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let user of jsonAccountData.users">
+						<td>
+							<span>{{user.id}}</span>
+						</td>
+						<td>
+							<span>{{user.login}}</span>
+						</td>
+						<td>
+							<a routerLink="/records/{{user.id}}"><button class="favorite styled"
+									type="button">Détail</button></a>
+
+
+						</td>
+					</tr>
+
+
+				</tbody>
+			</table>
+			<div class="row">
+				<div class="col-md-12">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

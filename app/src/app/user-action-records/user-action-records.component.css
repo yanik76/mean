@@ -1,0 +1,32 @@
+
+.row {
+    background-color: #0F5663;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+span{
+    color: antiquewhite;
+    margin-bottom: 30px;
+    
+}
+td {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+h2 {
+    color: antiquewhite;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h3 {
+    color: antiquewhite;
+}
+#main{
+    width: 90%;
+}
+a {
+    color: antiquewhite;
+    text-decoration: none;
+    }

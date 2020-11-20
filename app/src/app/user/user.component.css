@@ -1,0 +1,21 @@
+.img-thumbnail {
+    width: 150px;
+    height: 100px;
+}
+.row {
+    background-color :#0F5663;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h3{
+    color: antiquewhite;
+    margin-bottom: 30px;
+}
+#main{
+    width: 90%;
+    }
+
+span {
+    color: antiquewhite;
+}
+
